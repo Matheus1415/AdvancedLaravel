@@ -8,7 +8,7 @@
     
     @yield('styled')
 </head>
-<body>
+<body style="background: #0e0e0e;">
     <div class="container">
         {{--o html que herdar vai ser renderizado abaixo--}}
         @yield('content')
