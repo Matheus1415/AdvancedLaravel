@@ -29,6 +29,7 @@
                 <input type="password" class="form-control" id="password" name="password" placeholder="Digite sua senha">
             </div>
             <button type="submit" class="btn btn-primary w-100">Entrar</button>
+            <a href="{{$link}}">Google</a>
         </form>
     </div>
 @endsection
