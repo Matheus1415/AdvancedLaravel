@@ -14,9 +14,12 @@ class MainController extends Controller
         return "Ola Mundo";
     }
 
-    public function showHash()
+    public function showHash($numchar = 32)
     {
-        return MainOperations::generateHash();
+        echo "Tamanho padrão: ". MainOperations::generateHash()."<br>";
+        echo "Tamanho 16: ". MainOperations::generateHash(16)."<br>";
+        echo "Tamanho 32: ". MainOperations::generateHash(32)."<br>";
+        echo "Tamanho com parametro de rota: ". MainOperations::generateHash($numchar)."<br>";
     }
 
 }

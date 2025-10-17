@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Route;
 Route::get("/", [HomeController::class, 'index'])->name('home');
 
 Route::get("/main-index", [MainController::class, 'index'])->name('home');
-Route::get("/show-hash", [MainController::class, 'showHash'])->name('showHash');
+Route::get("/show-hash/{numchar?}", [MainController::class, 'showHash'])->name('showHash');
 
 Route::get("/about", [AboutController::class, 'index'])->name('home');  
 Route::get('/payment', function () {
